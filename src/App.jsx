@@ -37,16 +37,16 @@ function App() {
   return (
     <div className="flex flex-col gap-4 justify-center w-full items-center p-4 my-4">
       <div className="">
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className="flex gap-2 " >
           <input
-            className="p-2 border border-gray-400 rounded w-96 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+            className="p-2 border border-gray-400 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
             type="text"
             placeholder="Enter project github url"
             {...register("github_url", { required: true })}
           />
           <button
             type="submit"
-            className="p-2 bg-black rounded hover:bg-gray-700 mx-2 text-white "
+            className="p-2 w-fit bg-black rounded hover:bg-gray-700 mx-2 text-white "
           >
             Search
           </button>
